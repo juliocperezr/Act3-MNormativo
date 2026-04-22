@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla de Vinculación</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <h1>Arrastra cada elemento al campo correcto</h1>
+
+    <div class="tabla">
+
+        <!-- Encabezados -->
+        <div class="head">Definiciones</div>
+        <div class="head">Términos</div>
+        <div class="head">Respuesta</div>
+
+        <!-- FILA 1 -->
+        <div class="drag-item" draggable="true" data-id="A">
+            <strong>A.</strong> Promover una educación basada en el respeto irrestricto de la dignidad y el enfoque de derechos humanos.
+        </div>
+        <div class="term">Ley General de los Derechos de Niñas, Niños y Adolescentes (Art. 57, fracc. XII) </div>
+        <div class="drop-zone" data-correct="B"></div>
+
+        <!-- FILA 2 -->
+        <div class="drag-item" draggable="true" data-id="B">
+            <strong>B.</strong> Implementar protocolos para detectar y atender casos de acoso o violencia escolar.
+        </div>
+        <div class="term">Ley de Educación para el Estado de Tlaxcala (Ámbito Local, Art. 13)</div>
+        <div class="drop-zone" data-correct="C"></div>
+
+        <!-- FILA 3 -->
+        <div class="drag-item" draggable="true" data-id="C">
+            <strong>C.</strong>Remitir casos de menores de 12 años que cometan conductas tipificadas como delito a instituciones de protección (quedando exentos de responsabilidad penal).
+        </div>
+        <div class="term">Convención sobre la eliminación de todas las formas de discriminación contra la mujer (Art. 10)</div>
+        <div class="drop-zone" data-correct="D"></div>
+
+        <!-- FILA 4 -->
+        <div class="drag-item" draggable="true" data-id="D">
+            <strong>D.</strong> Asegurar la eliminación de conceptos estereotipados de género en los programas y métodos de enseñanza.
+        </div>
+        <div class="term">Constitución Política de los Estados Unidos Mexicanos (Art. 3°) </div>
+        <div class="drop-zone" data-correct="A"></div>
+
+    </div>
+
+    <div class="botones">
+        <button onclick="verificar()">Verificar</button>
+        <button onclick="reiniciarJuego()">Reiniciar</button>
+    </div>
+
+    <div id="mensaje"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
